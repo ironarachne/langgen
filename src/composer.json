@@ -1,0 +1,15 @@
+{
+    "name": "ironarachne/langgen",
+    "description": "A language description generator",
+    "type": "project",
+    "require": {
+        "twig/twig": "^2.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ben Overmyer",
+            "email": "manatrance@gmail.com"
+        }
+    ]
+}
