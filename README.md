@@ -5,4 +5,4 @@ language for fantasy role-playing games.
 
 It produces descriptions like this:
 
-> Goffish. A tonal, guttural language. It's spoken mostly by traders and in the far-off kingdom of Goff.
+> Goffish. A tonal, guttural language. It's spoken mostly in the far-off kingdom of Goff and by traders.
