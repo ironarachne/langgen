@@ -31,11 +31,14 @@ func GenerateDescription() LanguageDescription {
 	kingdomAdjective := utility.RandomItem(kingdomAdjectives)
 	kingdomType := utility.RandomItem(kingdomTypes)
 
+	writingSystemType := utility.RandomItem(writingSystemTypes)
+	writingSystemStyle := utility.RandomItem(writingSystemStyles)
+
 	languageSuffix := utility.RandomItem(languageSuffixes)
 
 	languageName := strings.Title(kingdomNamer.Name + languageSuffix)
 
-	description := languageName + ". A " + firstAdjective + ", " + secondAdjective + " language. Spoken mostly in the " + kingdomAdjective + " " + kingdomType + " of " + strings.Title(kingdomNamer.Name) + ", and sometimes by " + speakers + "."
+	description := languageName + ". A " + firstAdjective + ", " + secondAdjective + " language. Spoken mostly in the " + kingdomAdjective + " " + kingdomType + " of " + strings.Title(kingdomNamer.Name) + ", and sometimes by " + speakers + ". It uses a writing system that's " + writingSystemType + " and composed primarily of " + writingSystemStyle + " characters."
 
 	languageDescription := LanguageDescription{languageName, description}
 

@@ -46,4 +46,25 @@ var (
 		"republic",
 		"empire",
 	}
+
+	writingSystemTypes = []string{
+		"an alphabet",
+		"a syllabary",
+		"an abugida",
+		"an abjad",
+		"semanto-phonetic",
+	}
+
+	writingSystemStyles = []string{
+		"fluid",
+		"sharp",
+		"angular",
+		"dotted",
+		"smooth",
+		"flowing",
+		"erratic",
+		"disjointed",
+		"right-angled",
+		"circular",
+	}
 )
