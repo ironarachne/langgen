@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/ironarachne/naminglanguage"
-	"github.com/ironarachne/utility"
+	"github.com/ironarachne/random"
 	"github.com/kataras/iris"
 )
 
@@ -20,21 +20,21 @@ type LanguageDescription struct {
 func GenerateDescription() LanguageDescription {
 	kingdomNamer := naminglanguage.GeneratePlace()
 
-	firstAdjective := utility.RandomItem(languageAdjectives)
-	secondAdjective := utility.RandomItem(languageAdjectives)
+	firstAdjective := random.Item(languageAdjectives)
+	secondAdjective := random.Item(languageAdjectives)
 
 	if firstAdjective == secondAdjective {
-		secondAdjective = utility.RandomItem(languageAdjectives)
+		secondAdjective = random.Item(languageAdjectives)
 	}
 
-	speakers := utility.RandomItem(professionSpeakers)
-	kingdomAdjective := utility.RandomItem(kingdomAdjectives)
-	kingdomType := utility.RandomItem(kingdomTypes)
+	speakers := random.Item(professionSpeakers)
+	kingdomAdjective := random.Item(kingdomAdjectives)
+	kingdomType := random.Item(kingdomTypes)
 
-	writingSystemType := utility.RandomItem(writingSystemTypes)
-	writingSystemStyle := utility.RandomItem(writingSystemStyles)
+	writingSystemType := random.Item(writingSystemTypes)
+	writingSystemStyle := random.Item(writingSystemStyles)
 
-	languageSuffix := utility.RandomItem(languageSuffixes)
+	languageSuffix := random.Item(languageSuffixes)
 
 	languageName := strings.Title(kingdomNamer.Name + languageSuffix)
 
